@@ -1,6 +1,6 @@
 // import React from 'react';
 import { Button, message } from 'antd';
-// import { Link } from 'umi';
+import { history } from 'umi';
 import { LinkOutlined } from '@ant-design/icons';
 import './index.less';
 
@@ -82,7 +82,6 @@ const HomePage = () => {
         <Button
           type="primary"
           size="large"
-          className=""
           onClick={() => {
             location.href = 'http://www.jimmyxuexue.top:999';
           }}
@@ -94,10 +93,10 @@ const HomePage = () => {
           size="large"
           className="mx-5"
           onClick={() => {
-            message.info('敬请期待');
+            history.push('./community');
+            // message.info('敬请期待');
           }}
         >
-          {/* <Link to="./welcome">论坛中心</Link> */}
           论坛中心
         </Button>
         <Button
