@@ -6,34 +6,39 @@ import './index.less';
 
 const projects = [
   {
+    id: 0,
+    name: '诺基亚图片生成器',
+    url: 'http://www.jimmyxuexue.top:667/Nokia/',
+  },
+  {
     id: 1,
     name: '元气提醒',
-    url: 'https://gitee.com/jimmyxuexue/daily-push-to-girlfriend',
+    url: 'https://github.com/Jimmylxue/Vitality-reminder',
   },
   {
     id: 2,
     name: '水印生成器',
-    url: 'https://gitee.com/jimmyxuexue/watermark-generator',
+    url: 'https://github.com/Jimmylxue/easy-watermark',
   },
   {
     id: 3,
     name: '雪人消消乐',
-    url: 'https://gitee.com/jimmyxuexue/xiaoxiaole',
+    url: 'https://github.com/Jimmylxue/clear-by-egret',
   },
   {
     id: 4,
     name: '笨鸟游戏',
-    url: 'https://gitee.com/jimmyxuexue/stupid-bird-game',
+    url: 'https://github.com/Jimmylxue/bird-by-egret',
   },
   {
     id: 5,
     name: '飞机大战',
-    url: 'https://gitee.com/jimmyxuexue/egret-aircraft-war',
+    url: 'https://github.com/Jimmylxue/aircraft-battle-by-egret',
   },
   {
     id: 6,
     name: '50个前端项目',
-    url: 'https://gitee.com/jimmyxuexue/front-end-50-small-cases',
+    url: 'https://github.com/Jimmylxue/project-small-cases',
   },
 ];
 
