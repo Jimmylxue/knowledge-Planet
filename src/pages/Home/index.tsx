@@ -2,8 +2,10 @@
 import { Button, message } from 'antd';
 // import { Link } from 'umi';
 import { LinkOutlined } from '@ant-design/icons';
+import { mosaic } from 'esay-watermark';
 import './index.less';
 
+console.log(mosaic);
 const projects = [
   {
     id: 0,
@@ -17,7 +19,7 @@ const projects = [
   },
   {
     id: 2,
-    name: '水印生成器',
+    name: '水印（马赛克）生成器',
     url: 'https://github.com/Jimmylxue/easy-watermark',
   },
   {
