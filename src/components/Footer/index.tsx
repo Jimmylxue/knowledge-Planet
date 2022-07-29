@@ -12,29 +12,40 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <DefaultFooter
-      copyright={`${currentYear} ${defaultMessage}`}
-      links={[
-        {
-          key: 'Ant Design Pro',
-          title: '前端加油站',
-          href: 'http://www.jimmyxuexue.top:999/',
-          blankTarget: true,
-        },
-        {
-          key: 'github',
-          title: <GithubOutlined />,
-          href: 'https://github.com/Jimmylxue',
-          blankTarget: true,
-        },
-        {
-          key: 'Ant Design',
-          title: '联系站长',
-          href: 'http://www.jimmyxuexue.top:999/',
-          blankTarget: true,
-        },
-      ]}
-    />
+    <>
+      <DefaultFooter
+        copyright={`jimmy-知识星球`}
+        links={[
+          {
+            key: 'Ant Design Pro',
+            title: '前端加油站',
+            href: 'http://www.jimmyxuexue.top:999/',
+            blankTarget: true,
+          },
+          {
+            key: 'github',
+            title: <GithubOutlined />,
+            href: 'https://github.com/Jimmylxue',
+            blankTarget: true,
+          },
+          {
+            key: 'Ant Design',
+            title: '联系站长',
+            href: 'http://www.jimmyxuexue.top:999/',
+            blankTarget: true,
+          },
+        ]}
+      />
+      <div
+        className=" text-center  -mt-5 pb-3 cursor-pointer"
+        onClick={() => window.open('https://beian.miit.gov.cn/')}
+        style={{
+          color: 'rgba(0, 0, 0, 0.45)',
+        }}
+      >
+        {currentYear} {defaultMessage}
+      </div>
+    </>
   );
 };
 

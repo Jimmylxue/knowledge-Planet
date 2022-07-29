@@ -12,7 +12,7 @@ const Settings: LayoutSettings & {
   fixedHeader: false,
   fixSiderbar: true,
   colorWeak: false,
-  title: 'Knowledge Planet',
+  title: 'Knowledge Planet - 知识分享',
   pwa: false,
   logo: 'https://vitepress-source.oss-cn-beijing.aliyuncs.com/typoraimage-20220326203849385.png',
   iconfontUrl: ' ',
