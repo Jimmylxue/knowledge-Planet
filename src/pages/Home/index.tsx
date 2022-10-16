@@ -3,8 +3,45 @@ import { LinkOutlined } from '@ant-design/icons';
 import { GithubContributions } from 'github-contributions-react';
 import { projects, otherSite } from './const';
 import './index.less';
+import { useEffect } from 'react';
 
 const HomePage = () => {
+  const initEvent = () => {
+    async function getEvents(username: string) {
+      const events = [];
+      let page = 1;
+
+      do {
+        const url = `https://api.github.com/users/${username}/events?page=${page}`;
+        var body = await fetch(url).then((res) => res.json());
+        page++;
+        events.push(...body);
+      } while (!body.length);
+
+      return events;
+    }
+
+    (async () => {
+      const events = await getEvents('Jimmylxue');
+
+      console.log('Overall Events', events.length);
+      console.log(
+        'PullRequests',
+        events.filter((event) => event.type === 'PullRequestEvent').length,
+      );
+      console.log('Forks', events.filter((event) => event.type === 'ForkEvent').length);
+      console.log('Issues', events.filter((event) => event.type === 'IssuesEvent').length);
+      console.log(
+        'Reviews',
+        events.filter((event) => event.type === 'PullRequestReviewEvent').length,
+      );
+    })();
+  };
+
+  useEffect(() => {
+    // initEvent();
+  }, []);
+
   return (
     <div className="home">
       <div className="logo">
