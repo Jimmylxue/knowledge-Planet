@@ -1,4 +1,4 @@
-import { Button, message } from 'antd';
+import { Button } from 'antd';
 import { LinkOutlined } from '@ant-design/icons';
 import { GithubContributions } from 'github-contributions-react';
 import { projects, otherSite } from './const';
@@ -6,37 +6,37 @@ import './index.less';
 import { useEffect } from 'react';
 
 const HomePage = () => {
-  const initEvent = () => {
-    async function getEvents(username: string) {
-      const events = [];
-      let page = 1;
+  // const initEvent = () => {
+  //   async function getEvents(username: string) {
+  //     const events = [];
+  //     let page = 1;
 
-      do {
-        const url = `https://api.github.com/users/${username}/events?page=${page}`;
-        var body = await fetch(url).then((res) => res.json());
-        page++;
-        events.push(...body);
-      } while (!body.length);
+  //     do {
+  //       const url = `https://api.github.com/users/${username}/events?page=${page}`;
+  //       var body = await fetch(url).then((res) => res.json());
+  //       page++;
+  //       events.push(...body);
+  //     } while (!body.length);
 
-      return events;
-    }
+  //     return events;
+  //   }
 
-    (async () => {
-      const events = await getEvents('Jimmylxue');
+  //   (async () => {
+  //     const events = await getEvents('Jimmylxue');
 
-      console.log('Overall Events', events.length);
-      console.log(
-        'PullRequests',
-        events.filter((event) => event.type === 'PullRequestEvent').length,
-      );
-      console.log('Forks', events.filter((event) => event.type === 'ForkEvent').length);
-      console.log('Issues', events.filter((event) => event.type === 'IssuesEvent').length);
-      console.log(
-        'Reviews',
-        events.filter((event) => event.type === 'PullRequestReviewEvent').length,
-      );
-    })();
-  };
+  //     console.log('Overall Events', events.length);
+  //     console.log(
+  //       'PullRequests',
+  //       events.filter((event) => event.type === 'PullRequestEvent').length,
+  //     );
+  //     console.log('Forks', events.filter((event) => event.type === 'ForkEvent').length);
+  //     console.log('Issues', events.filter((event) => event.type === 'IssuesEvent').length);
+  //     console.log(
+  //       'Reviews',
+  //       events.filter((event) => event.type === 'PullRequestReviewEvent').length,
+  //     );
+  //   })();
+  // };
 
   useEffect(() => {
     // initEvent();
@@ -75,11 +75,12 @@ const HomePage = () => {
           size="large"
           className="mx-5"
           onClick={() => {
-            message.info('敬请期待');
+            // message.info('敬请期待');
+            location.href = 'http://www.jimmyxuexue.top:668/#/chatRoom';
           }}
         >
           {/* <Link to="./welcome">论坛中心</Link> */}
-          论坛中心
+          吉米小黑屋
         </Button>
         <Button
           type="default"
