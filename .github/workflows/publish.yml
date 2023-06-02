@@ -23,16 +23,16 @@ jobs:
         with:
           node-version: 14.18.0
 
-      - name: cnpm
-        run: npm install -g cnpm
+      - name: yarn
+        run: npm install -g yarn
 
       # 安装依赖
       - name: 安装依赖
-        run: cnpm install
+        run: yarn
 
       # 打包
       - name: 打包
-        run: cnpm run build
+        run: yarn build
 
       # 上传到阿里云
       - name: 发布到阿里云

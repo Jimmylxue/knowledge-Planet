@@ -1,7 +1,7 @@
 import { Button } from 'antd';
 import { LinkOutlined } from '@ant-design/icons';
-import { GithubContributions } from 'github-contributions-react';
 import { projects, otherSite } from './const';
+import GitHubCalendar from 'react-github-calendar';
 import './index.less';
 
 const HomePage = () => {
@@ -102,8 +102,8 @@ const HomePage = () => {
           ))}
         </div>
       </div>
-      <div className="dz-git-show">
-        <GithubContributions username="Jimmylxue" color="rgb(66, 184, 131)" />
+      <div className="dz-git-show flex justify-center mt-5">
+        <GitHubCalendar username="Jimmylxue" />
       </div>
     </div>
   );
