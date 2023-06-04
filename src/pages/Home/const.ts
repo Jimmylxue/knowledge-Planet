@@ -40,7 +40,7 @@ export const otherSite = [
   {
     id: 1,
     name: '前端加油站',
-    url: 'http://www.jimmyxuexue.top:999/',
+    url: 'https://blog.jimmyxuexue.top/',
   },
   {
     id: 2,

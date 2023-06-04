@@ -28,7 +28,7 @@ const HomePage = () => {
           size="large"
           className=""
           onClick={() => {
-            location.href = 'http://www.jimmyxuexue.top:999';
+            location.href = 'https://blog.jimmyxuexue.top';
           }}
         >
           在线文档
@@ -38,7 +38,7 @@ const HomePage = () => {
           size="large"
           className="ml-5"
           onClick={() => {
-            location.href = 'http://www.jimmyxuexue.top:668/#/todolist';
+            location.href = 'https://tdl.jimmyxuexue.top:668/#/todolist';
           }}
         >
           snow-todoList
@@ -48,7 +48,7 @@ const HomePage = () => {
           size="large"
           className="mx-5"
           onClick={() => {
-            location.href = 'http://www.jimmyxuexue.top:668/#/chatRoom';
+            location.href = 'http://index.jimmyxuexue.top/#/chatRoom';
           }}
         >
           吉米小黑屋
@@ -102,7 +102,7 @@ const HomePage = () => {
           ))}
         </div>
       </div>
-      <div className="dz-git-show flex justify-center mt-5">
+      <div className="dz-git-show flex justify-center mt-5 relative">
         <GitHubCalendar username="Jimmylxue" />
       </div>
     </div>

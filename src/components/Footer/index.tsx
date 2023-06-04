@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
           {
             key: 'Ant Design Pro',
             title: '前端加油站',
-            href: 'http://www.jimmyxuexue.top:999/',
+            href: 'https://blog.jimmyxuexue.top/',
             blankTarget: true,
           },
           {
