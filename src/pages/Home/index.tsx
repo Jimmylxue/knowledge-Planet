@@ -38,7 +38,7 @@ const HomePage = () => {
           size="large"
           className="ml-5"
           onClick={() => {
-            location.href = 'https://tdl.jimmyxuexue.top:668/#/todolist';
+            location.href = 'https://tdl.jimmyxuexue.top/';
           }}
         >
           snow-todoList
@@ -48,7 +48,7 @@ const HomePage = () => {
           size="large"
           className="mx-5"
           onClick={() => {
-            location.href = 'http://index.jimmyxuexue.top/#/chatRoom';
+            location.href = 'https://index.jimmyxuexue.top/#/chatRoom';
           }}
         >
           吉米小黑屋
