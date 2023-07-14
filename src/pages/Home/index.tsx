@@ -38,6 +38,16 @@ const HomePage = () => {
           size="large"
           className="ml-5"
           onClick={() => {
+            location.href = 'https://index.jimmyxuexue.top/';
+          }}
+        >
+          snow-index
+        </Button>
+        <Button
+          type="primary"
+          size="large"
+          className="ml-5"
+          onClick={() => {
             location.href = 'https://tdl.jimmyxuexue.top/';
           }}
         >
